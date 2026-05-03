@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Haven | Premium Furniture for Modern Interiors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="topbar">Complimentary white-glove delivery on orders above $4,000</div>
+
+    <header class="site-header">
+      <div class="shell">
+        <nav class="nav">
+          <a class="brand" href="index.html"><span>Atelier</span>Haven</a>
+
+          <div class="nav-links desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Collection</a>
+            <a href="#story">Brand Story</a>
+            <a href="product.html?id=solace-sofa">Signature Pieces</a>
+          </div>
+
+          <div class="nav-actions desktop-actions">
+            <a href="checkout.html">Checkout</a>
+            <a class="cart-pill" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+          </div>
+
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open navigation">
+            Menu
+          </button>
+        </nav>
+
+        <div class="mobile-menu" data-mobile-menu>
+          <a href="index.html">Home</a>
+          <a href="products.html">Collection</a>
+          <a href="#story">Brand Story</a>
+          <a href="product.html?id=solace-sofa">Signature Pieces</a>
+          <a href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="shell hero-layout">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Premium furniture, edited with restraint</span>
+            <h1>Furniture designed with the discipline of architecture.</h1>
+            <p class="lede">
+              Atelier Haven creates sofas, beds, tables, and storage pieces with generous scale, tactile finishes, and
+              an intentionally quiet presence.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button" href="products.html">Shop the Collection</a>
+              <a class="button-secondary" href="#featured">View Featured Pieces</a>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="metric-card reveal delay-1">
+                <strong>48</strong>
+                <p>Designs across living, bedroom, dining, and studio spaces.</p>
+              </div>
+              <div class="metric-card reveal delay-2">
+                <strong>5 wk</strong>
+                <p>Average lead time with concierge scheduling and in-room placement.</p>
+              </div>
+              <div class="metric-card reveal delay-3">
+                <strong>100%</strong>
+                <p>Natural-facing finishes in oak, walnut, boucle, linen, leather, and stone.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stage reveal delay-2">
+            <div class="hero-stage-main">
+              <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80"
+                alt="Premium bedroom interior with oak bed and warm neutral styling"
+              />
+              <div class="frame-caption">
+                <strong>The room, simplified</strong>
+                <p>Soft silhouettes, architectural lines, and neutral surfaces built to feel calm every day.</p>
+              </div>
+            </div>
+
+            <div class="hero-stage-side">
+              <div class="hero-stage-card">
+                <img
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+                  alt="Contemporary living room with sculpted sofa"
+                />
+                <div class="frame-caption frame-caption-light">
+                  <strong>Living</strong>
+                  <p>Deep lounge seating with tailored forms and warm materials.</p>
+                </div>
+              </div>
+
+              <div class="hero-stage-card">
+                <img
+                  src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=1200&q=80"
+                  alt="Modern dining room with walnut table"
+                />
+                <div class="frame-caption frame-caption-light">
+                  <strong>Dining</strong>
+                  <p>Walnut and stone tables sized for hosting without visual clutter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip-section">
+        <div class="shell strip">
+          <a class="strip-card reveal" href="products.html">
+            <span>Living</span>
+            <p>Statement sofas and lounge chairs with inviting depth and clean geometry.</p>
+          </a>
+          <a class="strip-card reveal delay-1" href="product.html?id=halo-bed">
+            <span>Bedroom</span>
+            <p>Low beds, tactile nightstands, and warm finishes that soften the room instantly.</p>
+          </a>
+          <a class="strip-card reveal delay-2" href="product.html?id=verge-table">
+            <span>Dining</span>
+            <p>Tables and consoles defined by material weight, rounded corners, and clarity.</p>
+          </a>
+          <a class="strip-card reveal delay-3" href="product.html?id=lumen-sideboard">
+            <span>Storage</span>
+            <p>Quiet utility pieces that keep rooms composed even under daily use.</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="featured">
+        <div class="shell">
+          <div class="section-head reveal">
+            <div>
+              <span class="eyebrow">Featured products</span>
+              <h2>An elevated core collection.</h2>
+            </div>
+            <p>Large imagery, reduced chrome, and generous spacing keep the focus on proportion, texture, and finish.</p>
+          </div>
+
+          <div class="product-grid featured-grid" id="featured-products"></div>
+        </div>
+      </section>
+
+      <section id="story">
+        <div class="shell story-grid">
+          <div class="story-card reveal">
+            <span class="eyebrow">Brand story</span>
+            <h2>Minimal in appearance. Warm in experience.</h2>
+            <p class="lede">
+              The collection is built for people who want fewer pieces, better made. Each design begins with how the
+              room should feel first, and what it needs second.
+            </p>
+
+            <div class="split-list">
+              <div>
+                <h3>Material honesty</h3>
+                <p>Oak, walnut, boucle, linen, leather, and stone remain matte, tactile, and naturally toned.</p>
+              </div>
+              <div>
+                <h3>Human-scale comfort</h3>
+                <p>Seat depths, bed heights, and tabletop proportions are tuned for long-term daily use.</p>
+              </div>
+              <div>
+                <h3>White-glove delivery</h3>
+                <p>Orders include placement guidance, packaging removal, and premium aftercare notes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-visual reveal delay-2">
+            <div class="story-visual-main">
+              <img
+                src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80"
+                alt="Premium open living room with refined furniture and soft daylight"
+              />
+            </div>
+
+            <div class="story-note-grid">
+              <div class="story-note">
+                <span>Material library</span>
+                <strong>Layered neutrals and tactile surfaces that age quietly.</strong>
+              </div>
+              <div class="story-note">
+                <span>Concierge service</span>
+                <strong>Design guidance available for full-room layouts and finish pairing.</strong>
+              </div>
+              <div class="story-note">
+                <span>Nationwide delivery</span>
+                <strong>Large pieces arrive with scheduled windows and in-room assembly.</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell services-grid">
+          <article class="service-card reveal">
+            <span class="eyebrow">01</span>
+            <h3>Interior planning support</h3>
+            <p>Share dimensions and lighting references. We help curate combinations that keep the room open and calm.</p>
+          </article>
+          <article class="service-card reveal delay-1">
+            <span class="eyebrow">02</span>
+            <h3>Premium delivery flow</h3>
+            <p>Every order includes scheduling, assembly, placement, and post-install care guidance.</p>
+          </article>
+          <article class="service-card reveal delay-2">
+            <span class="eyebrow">03</span>
+            <h3>Built for longevity</h3>
+            <p>Quiet detailing, durable upholstery, and timeless silhouettes reduce replacement cycles.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell editorial-banner reveal">
+          <div class="editorial-copy">
+            <span class="eyebrow">Design service</span>
+            <h2>Planning a full room?</h2>
+            <p class="lede">
+              Start with the collection, move through the product pages, then test the full shopping cart and checkout
+              flow. The experience is designed to stay clear and premium end to end.
+            </p>
+          </div>
+          <div class="editorial-actions">
+            <a class="button" href="products.html">Browse Products</a>
+            <a class="button-secondary" href="checkout.html">View Checkout</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span>Atelier</span>Haven</a>
+          <p>Premium furniture for contemporary homes. Clean silhouettes, tactile finishes, and white-glove delivery.</p>
+          <p class="copyright">(C) 2025 Atelier Haven. All rights reserved.</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-links">
+            <a href="mailto:hello@atelierhaven.com">hello@atelierhaven.com</a>
+            <a href="tel:+12125550144">+1 (212) 555-0144</a>
+            <a href="#">New York showroom</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Policies</h3>
+          <div class="footer-links">
+            <a href="#">Shipping &amp; Returns</a>
+            <a href="#">Warranty</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Social</h3>
+          <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

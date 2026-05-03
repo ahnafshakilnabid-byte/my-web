@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection | Atelier Haven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="topbar">Private design assistance available for full-room projects</div>
+
+    <header class="site-header">
+      <div class="shell">
+        <nav class="nav">
+          <a class="brand" href="index.html"><span>Atelier</span>Haven</a>
+
+          <div class="nav-links desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Collection</a>
+            <a href="product.html?id=verge-table">Dining</a>
+            <a href="product.html?id=halo-bed">Bedroom</a>
+          </div>
+
+          <div class="nav-actions desktop-actions">
+            <a href="checkout.html">Checkout</a>
+            <a class="cart-pill" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+          </div>
+
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open navigation">
+            Menu
+          </button>
+        </nav>
+
+        <div class="mobile-menu" data-mobile-menu>
+          <a href="index.html">Home</a>
+          <a href="products.html">Collection</a>
+          <a href="product.html?id=verge-table">Dining</a>
+          <a href="product.html?id=halo-bed">Bedroom</a>
+          <a href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="shell page-hero-grid reveal">
+          <div>
+            <span class="eyebrow">Collection</span>
+            <h1>Clean, considered furniture for every room.</h1>
+            <p class="lede">
+              Explore sofas, beds, tables, seating, and storage pieces through a product grid shaped by price,
+              category, and material filters.
+            </p>
+          </div>
+
+          <div class="hero-side-card">
+            <span class="hero-side-label">Collection notes</span>
+            <p>Each product page includes large imagery, materials, dimensions, lead time, and a direct add-to-cart flow.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell catalog-layout">
+          <aside class="filter-panel reveal">
+            <div class="panel-intro">
+              <span class="eyebrow">Refine</span>
+              <p>Set a price ceiling, then narrow by category and material.</p>
+            </div>
+
+            <div class="filter-group">
+              <h3>Price</h3>
+              <div class="range-wrap">
+                <input id="price-range" type="range" min="900" max="5000" step="50" value="5000" />
+                <strong id="price-value">$5,000</strong>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3>Category</h3>
+              <div class="filter-option-row" id="category-filters"></div>
+            </div>
+
+            <div class="filter-group">
+              <h3>Material</h3>
+              <div class="filter-option-row" id="material-filters"></div>
+            </div>
+
+            <button class="button-secondary filter-reset" id="clear-filters" type="button">Reset Filters</button>
+          </aside>
+
+          <div class="catalog-main">
+            <div class="catalog-toolbar reveal delay-1">
+              <span class="catalog-count" id="catalog-count">0 pieces</span>
+
+              <label>
+                <span class="eyebrow">Sort</span>
+                <select id="sort-select" aria-label="Sort products">
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="name">Alphabetical</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="product-grid" id="catalog-grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span>Atelier</span>Haven</a>
+          <p>Intentional furniture for rooms that value clarity, calm, and exceptional material character.</p>
+          <p class="copyright">Curated collection, delivered nationwide.</p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-links">
+            <a href="mailto:hello@atelierhaven.com">hello@atelierhaven.com</a>
+            <a href="tel:+12125550144">+1 (212) 555-0144</a>
+            <a href="#">Private appointments</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Policies</h3>
+          <div class="footer-links">
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Social</h3>
+          <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Journal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
